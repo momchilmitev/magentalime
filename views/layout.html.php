@@ -13,6 +13,7 @@
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="jokes.php">Jokes</a></li>
+            <li><a href="addjoke.php">Add joke</a></li>
         </ul>
     </nav>
     <?= $output ?>
