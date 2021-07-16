@@ -3,14 +3,14 @@
 try {
     $pdo = new PDO('mysql:host=localhost;dbname=jokes;charset=utf8', 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $query = 'SELECT `joketext` FROM `joke`';
+    $query = 'SELECT `id`, `joketext` FROM `joke`';
     $result = $pdo->query($query);
 
     $title = 'Jokes list';
     $output = '';
 
-    while ($row = $result->fetch()) {
-        $jokes[] = $row['joketext'];
+    foreach ($result as $row) {
+        $jokes[] = ['id' => $row['id'], 'text' => $row['joketext']];
     }
 
     ob_start();
