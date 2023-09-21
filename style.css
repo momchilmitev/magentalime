@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
 :root {
   --lime: #A4FFA2;
   --magenta:#F47DDA;
@@ -7,6 +9,13 @@
   --teal:#2E6D81;
   --cyan:#7DE6F4;
   --black:#050D14;
+  --base-size: 1rem;
+  --scale: 1.25;
+  --h5: calc(var(--base-size) * var(--scale));
+  --h4: calc(--h5) * var(--scale);
+  --h3: calc(--h4) * var(--scale);
+  --h2: calc(--h3) * var(--scale);
+  --h1: calc(--h2) * var(--scale);
 }
 
 html {
@@ -15,4 +24,45 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body {
+  background-color: var(--teal);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  font-size: var(--base-size);
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small, .text_small {
+  font-size: calc(var(--base-size) / var(--scale));
 }
