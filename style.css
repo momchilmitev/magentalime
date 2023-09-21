@@ -1,3 +1,14 @@
+:root {
+  --lime: #A4FFA2;
+  --magenta:#F47DDA;
+  --magenta50:#F47DDA80;
+  --white:#FFFFFF;
+  --tan:#CEC5B4;
+  --teal:#2E6D81;
+  --cyan:#7DE6F4;
+  --black:#050D14;
+}
+
 html {
   box-sizing: border-box;
 }
