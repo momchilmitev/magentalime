@@ -112,6 +112,11 @@
     margin-bottom: 4rem;
   }
 
+  footer {
+    margin-top: 5rem;
+    text-transform: uppercase; 
+  }
+
   .club {
     font-size: var(--h5);
   }
