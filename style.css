@@ -82,12 +82,34 @@
     max-width: 100%;
   }
 
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
   a {
     color: var(--lime);
   }
 
   a:hover {
     color: var(--cyan);
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+  }
+
+  cite {
+    display: block;
+    font-style: normal;
+    margin: 0;
+    margin-top: -3px;
+    padding: 0;
+  }
+
+  main {
+    margin-bottom: 4rem;
   }
 
   .club {
@@ -119,5 +141,15 @@
   .club {
     color: var(--lime);
     font-size: var(--h5);
+  }
+}
+
+@layer aside {
+  .imggroup {
+    margin-top: 2rem;
+  }
+
+  .star {
+    width: 18px;
   }
 }
