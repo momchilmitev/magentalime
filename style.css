@@ -136,6 +136,12 @@
   header img {
     max-width: 150px;
   }
+
+  @media (min-width: 800px) {
+    .wrapper {
+      max-width: 800px;
+    }
+  }
 }
 
 @layer tour {
@@ -157,4 +163,4 @@
   .star {
     width: 18px;
   }
-}
+} 
