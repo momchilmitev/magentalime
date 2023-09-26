@@ -153,6 +153,17 @@
     color: var(--lime);
     font-size: var(--h5);
   }
+
+  @media (min-width: 800px) {
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    main > h1 {
+      grid-column: 1/4;
+    }
+  }
 }
 
 @layer aside {
