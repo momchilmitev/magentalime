@@ -174,4 +174,12 @@
   .star {
     width: 18px;
   }
+
+  @media (min-width: 800px) {
+    aside {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
 } 
