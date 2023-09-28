@@ -35,8 +35,8 @@
   body {
     background: var(--gradient);
     color: var(--white);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-family: var(--serif);
+    font-weight: 300;
     line-height: 1.75;
     font-size: var(--base-size);
     margin: 0;
@@ -148,6 +148,20 @@
   .club {
     color: var(--lime);
     font-size: var(--h5);
+  }
+
+  .button-primary {
+    text-transform: uppercase;
+    border: 2px solid var(--magenta);
+    padding: 1rem 2rem;
+    color: var(--magenta);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+    width: 170px;
   }
 }
 
