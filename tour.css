@@ -141,13 +141,19 @@
 }
 
 @layer tour {
+  main p {
+    font-family: var(--sans-serif);
+  }
+
   .date {
     color: var(--tan);
+    font-family: var(--cursive);
   }
 
   .club {
     color: var(--lime);
     font-size: var(--h5);
+    font-family: var(--serif);
   }
 
   .button-primary {
@@ -163,6 +169,7 @@
     white-space: nowrap;
     width: 170px;
     transition: .3s;
+    font-family: var(--serif);
   }
 
   .button-primary:hover {
