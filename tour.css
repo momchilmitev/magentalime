@@ -133,6 +133,7 @@
   header {
     padding-top: 3rem;
     padding-bottom: 2rem;
+    text-align: center;
   }
 
   header img {
@@ -141,8 +142,24 @@
 }
 
 @layer tour {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main h1 {
+    grid-area: 1/1/2/3;
+    font-family: var(--cursive);
+    text-align: center;
+  }
+
   main p {
     font-family: var(--sans-serif);
+  }
+
+  main p:nth-child(odd) {
+    justify-self: end;
+    align-self: center;
   }
 
   .date {
@@ -192,16 +209,7 @@
 
 @media (min-width: 800px) {
   .wrapper {
-    max-width: 800px;
+    max-width: 600px;
     padding: 2rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0 2rem;
-    max-width: 1200px;
   }
 }
