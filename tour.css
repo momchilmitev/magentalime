@@ -207,6 +207,36 @@
   }
 }
 
+@layer footer {
+  footer {
+    text-align: center;
+  }
+
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  footer svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  footer .social {
+    fill: var(--lime);
+  }
+
+  footer a:hover .social {
+    fill: var(--cyan);
+  }
+}
+
 @media (min-width: 800px) {
   .wrapper {
     max-width: 600px;
