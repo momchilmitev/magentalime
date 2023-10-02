@@ -136,12 +136,6 @@
   header img {
     max-width: 150px;
   }
-
-  @media (min-width: 800px) {
-    .wrapper {
-      max-width: 800px;
-    }
-  }
 }
 
 @layer tour {
@@ -153,34 +147,39 @@
     color: var(--lime);
     font-size: var(--h5);
   }
-
-  @media (min-width: 800px) {
-    main {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    main > h1 {
-      grid-column: 1/4;
-    }
-  }
 }
 
 @layer aside {
-  .imggroup {
-    margin-top: 2rem;
+  .reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+    gap: 2rem;
   }
 
   .star {
     width: 18px;
   }
 
-  @media (min-width: 800px) {
-    aside {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
+  .featured-img {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    max-width: 800px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main > h1 {
+    grid-column: 1/4;
   }
 }
 
@@ -196,5 +195,11 @@
     display: block;
     grid-area: 1 / 2 / 5 / 3;
     padding-top: 11rem;
+  }
+
+  aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
