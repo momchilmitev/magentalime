@@ -10,6 +10,7 @@
     --teal:#2E6D81;
     --cyan:#7DE6F4;
     --black:#050D14;
+    --gray: #adb0c0;
     --base-size: 1rem;
     --scale: 1.25;
     --h6: var(--base-size);
@@ -166,5 +167,36 @@
   .button-primary:hover {
     color: var(--cyan);
     border-color: var(--cyan);
+  }
+}
+
+@layer playlist {
+  table {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: var(--cursive);
+    border-collapse: collapse;
+  }
+
+  caption {
+    visibility: collapse;
+  }
+
+  th, td {
+    padding: 1rem 0;
+  }
+
+  th {
+    text-align: left;
+    font-family: var(--sans-serif);
+    border-bottom: 1px solid var(--gray);
+    color: var(--gray);
+  }
+
+  tr > td:last-child {
+    font-family: var(--serif);
+    color: var(--magenta);
+    font-weight: 600;
   }
 }
