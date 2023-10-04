@@ -217,6 +217,22 @@
       /* padding: 0 1rem; */
     }
   }
+
+  @media (min-width:1000px) {
+    .reviews {
+      display: block;
+      width: 200px;
+    }
+
+    .reviews figure:nth-child(odd) {
+      padding: 0;
+    }
+
+    .featured-img {
+      position: relative;
+      right: 1.5rem;
+    }
+  }
 }
 
 @media (min-width: 800px) {
@@ -248,9 +264,9 @@
     padding-top: 11rem;
   }
 
-  aside {
+  /* aside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-  }
+  } */
 }
