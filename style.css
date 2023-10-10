@@ -239,6 +239,11 @@
 }
 
 @layer audio-player {
+  .cover {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
   #audio-player-container {
     --seek-before-width: 0%;
     --volume-before-width: 100%;
